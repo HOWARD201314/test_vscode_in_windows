@@ -1,0 +1,29 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",//调试下拉列表中显示
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}\\bin\\main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,//调试时是否显示控制台窗口
+            "MIMode": "gdb",//VSCode要使用的调试工具
+            "miDebuggerPath": "gdb.exe",//gdb.exe所在路径，该bin目录已经加入到环境变量中了
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "构建"
+        }
+    ]
+}
