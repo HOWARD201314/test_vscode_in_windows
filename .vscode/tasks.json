@@ -15,6 +15,7 @@
                 "src\\main.cpp",
                 "src\\file1.cpp",
                 "src\\file2.cpp",
+                "src\\mathfunc\\mathadd.cpp",
                 "-o",
                 "bin\\main.exe"
             ],

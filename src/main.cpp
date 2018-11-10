@@ -2,6 +2,7 @@
 #include <string>
 #include "file1.h"
 #include "file2.h"
+#include "mathadd.h"
 using namespace std;
 
 int main()
@@ -11,6 +12,10 @@ int main()
 
     testFile1();
     testFile2();
+
+    int a = 1;
+    int b = 2;
+    cout<<add(a,b)<<endl;
 
     char *p = (char *)malloc(100);
     if (p == nullptr)
